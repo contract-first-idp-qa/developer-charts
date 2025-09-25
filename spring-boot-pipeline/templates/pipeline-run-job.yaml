@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
           - name: {{ .Values.component }}-pipeline-run-job
-            image: gcr.io/tekton-releases/dogfooding/tkn
+            image: registry.redhat.io/openshift-pipelines/pipelines-cli-tkn-rhel8:v1.17.2
             command:
               - /bin/sh
               - -c
