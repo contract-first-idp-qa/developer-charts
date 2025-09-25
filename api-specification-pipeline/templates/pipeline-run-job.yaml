@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
           - name: {{ .Values.component }}-api-pipeline-run-job
-            image: registry.redhat.io/openshift-pipelines/pipelines-cli-tkn-rhel8:latest
+            image: registry.redhat.io/openshift-pipelines/pipelines-cli-tkn-rhel8:v1.17.2
             command:
               - /bin/sh
               - -c
